@@ -26,9 +26,10 @@
     <!-- Hero section -->
     <div id="hero" class="pt-3">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-black container rounded-pill px-2">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-black container rounded-pill px-2 sticky-nav"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo.png" alt="Chat Watch" />
           </a>
           <button
@@ -47,29 +48,27 @@
               class="navbar-nav mx-auto mb-2 mb-lg-0 flex-grow-1 justify-content-center gap-1 gap-lg-4"
             >
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="onlineChecker.html"
+                <a class="nav-link active" href="online-checker.html"
                   >Online Checker</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="lastSeen.html">Last See</a>
+                <a class="nav-link" href="last-seen.html">Last Seen</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-grow-0">
-              <li class="nav-item">
-                <a class="nav-link text-primary fw-medium" href="login.html"
+              <li class="">
+                <a class="nav-link text-white fw-medium" style="padding-right: 20px;"
+                href="login.html"
                   >Login</a
                 >
               </li>
@@ -92,7 +91,7 @@
           Check Their Online Status with <br />
           Chatwatch
         </h1>
-        <p class="px-5 mx-5 mb-5">
+        <p class="px-3 px-md-5 mx-md-5 mb-5 mx-0">
           Chatwatch is here to answer that age old question. Use Chatwatch to
           monitor your friends, family or employee’s Whatsapp usage. Find out
           when they went to bed and woke up, compare chat patterns between
@@ -100,11 +99,11 @@
           to each other during the day, using Artificial Intelligence.Yep, we
           made it happen.
         </p>
-
-        <div class="row mx-5 mt-5 mb-3">
+        <!-- Screens for PC start -->
+        <div class="row mx-5 d-none d-md-flex">
           <div class="col-4">
             <img
-              src="assets/images/screen-1.png"
+              src="assets/images/online-checker-1.png"
               alt="Home Screen"
               class="w-100"
             />
@@ -124,6 +123,34 @@
             />
           </div>
         </div>
+        <!-- Screens for PC end -->
+
+        <!-- Screens for mobile start -->
+        <div class="d-block d-md-none mobileScreens">
+          <div class="m-5">
+            <img
+              src="assets/images/online-checker-full-1.png"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="m-5">
+            <img
+              src="assets/images/online-checker-full-2.png"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="m-5">
+            <img
+              src="assets/images/online-checker-full-3.png"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="spacer-50"></div>
+        </div>
+        <!-- Screens for mobile end -->
       </div>
       <!-- Hero content end -->
     </div>

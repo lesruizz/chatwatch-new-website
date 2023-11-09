@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chat Watch</title>
+    <title>ChatWatch</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,9 +26,10 @@
     <!-- Hero section -->
     <div id="hero" class="pt-3">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-black container rounded-pill px-2">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-black container rounded-pill px-2 sticky-nav"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo.png" alt="Chat Watch" />
           </a>
           <button
@@ -47,27 +48,27 @@
               class="navbar-nav mx-auto mb-2 mb-lg-0 flex-grow-1 justify-content-center gap-1 gap-lg-4"
             >
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="online-checker.html"
+                  >Online Checker</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="onlineChecker.html">Online Checker</a>
+                <a class="nav-link" href="last-seen.html">Last Seen</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="lastSeen.html">Last See</a>
+                <a class="nav-link active" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-grow-0">
-              <li class="nav-item">
-                <a class="nav-link text-primary fw-medium" href="login.html"
+              <li class="">
+                <a class="nav-link text-white fw-medium" style="padding-right: 20px;"
+                href="login.html"
                   >Login</a
                 >
               </li>
@@ -95,261 +96,217 @@
     <!-- Hero section End -->
 
     <!-- Cards Section -->
-    <div class="pb-5 container mt-5 pt-2 how-it-works">
-      <div
+    <div class="pb-5 container mt-5 pt-2">
+      <!-- <div
         class="d-flex gap-4 mt-lg-5 justify-content-center flex-wrap align-items-center"
-      >
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              The Snap Pixel: How It Works and How to Install
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
+      > -->
+      <div class="row gy-3 gx-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 rounded-4">
+            <img
+              class="card-img-top"
+              src="assets/images/card-img-1.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                The Snap Pixel: How It Works and How to Install
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary p-3 text-decoration-underline fs-5 fw-semibold w-100"
+              >READ MORE</a
+            >
           </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
         </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              Global Partner Solutions: A Partnership of Innovation
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 rounded-4">
+            <img
+              class="card-img-top"
+              src="assets/images/card-img-2.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Global Partner Solutions: A Partnership of Innovation
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary p-3 text-decoration-underline fs-5 fw-semibold w-100"
+              >READ MORE</a
+            >
           </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
         </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              2021: An opportunity for Snapchatters to start fresh
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 rounded-4">
+            <img
+              class="card-img-top"
+              src="assets/images/card-img-3.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                2021: An opportunity for Snapchatters to start fresh
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary p-3 text-decoration-underline fs-5 fw-semibold w-100"
+              >READ MORE</a
+            >
           </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
         </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              The Snap Pixel: How It Works and How to Install
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 rounded-4">
+            <img
+              class="card-img-top"
+              src="assets/images/card-img-1.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                The Snap Pixel: How It Works and How to Install
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary p-3 text-decoration-underline fs-5 fw-semibold w-100"
+              >READ MORE</a
+            >
           </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
         </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              Global Partner Solutions: A Partnership of Innovation
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 rounded-4">
+            <img
+              class="card-img-top"
+              src="assets/images/card-img-2.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Global Partner Solutions: A Partnership of Innovation
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary p-3 text-decoration-underline fs-5 fw-semibold w-100"
+              >READ MORE</a
+            >
           </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
         </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              2021: An opportunity for Snapchatters to start fresh
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 rounded-4">
+            <img
+              class="card-img-top"
+              src="assets/images/card-img-3.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                2021: An opportunity for Snapchatters to start fresh
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary p-3 text-decoration-underline fs-5 fw-semibold w-100"
+              >READ MORE</a
+            >
           </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
         </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              The Snap Pixel: How It Works and How to Install
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 rounded-4">
+            <img
+              class="card-img-top"
+              src="assets/images/card-img-1.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                The Snap Pixel: How It Works and How to Install
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary p-3 text-decoration-underline fs-5 fw-semibold w-100"
+              >READ MORE</a
+            >
           </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
         </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              Global Partner Solutions: A Partnership of Innovation
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 rounded-4">
+            <img
+              class="card-img-top"
+              src="assets/images/card-img-2.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Global Partner Solutions: A Partnership of Innovation
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary p-3 text-decoration-underline fs-5 fw-semibold w-100"
+              >READ MORE</a
+            >
           </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
         </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              2021: An opportunity for Snapchatters to start fresh
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 rounded-4">
+            <img
+              class="card-img-top"
+              src="assets/images/card-img-3.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                2021: An opportunity for Snapchatters to start fresh
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary p-3 text-decoration-underline fs-5 fw-semibold w-100"
+              >READ MORE</a
+            >
           </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
-        </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              The Snap Pixel: How It Works and How to Install
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
-        </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              Global Partner Solutions: A Partnership of Innovation
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
-        </div>
-        <div class="card border-0 rounded-4" style="width: 370px">
-          <img
-            class="card-img-top"
-            src="assets/images/card-img-3.png"
-            alt="Card image"
-          />
-          <div class="card-body">
-            <h4 class="card-title">
-              2021: An opportunity for Snapchatters to start fresh
-            </h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="btn btn-primary p-3 text-decoration-underline w-100"
-            >See Profile</a
-          >
         </div>
       </div>
     </div>
@@ -372,22 +329,23 @@
           </div>
           <div class="col-lg-4 d-flex align-items-lg-center flex-column">
             <h5 class="mt-4 pt-3 ms-lg-3">Quick Links</h5>
+            <br>
             <ul class="list-unstyled">
               <li>
-                <a href="about.html" class="link-underline-dark text-off-white"
-                  >About</a
+                <a href="index.html" class="link-underline-dark text-off-white"
+                  >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="feature.html"
+                  href="online-checker.html"
                   class="link-underline-dark text-off-white"
-                  >Feature</a
+                  >Online Checker</a
                 >
               </li>
               <li>
-                <a href="#" class="link-underline-dark text-off-white"
-                  >Screenshot</a
+                <a href="last-seen.html" class="link-underline-dark text-off-white"
+                  >Last Seen</a
                 >
               </li>
               <li>
@@ -395,10 +353,16 @@
                   >Blog</a
                 >
               </li>
+              <li>
+                <a href="contact.html" class="link-underline-dark text-off-white"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-6">
             <h5 class="mt-4 pt-3">News Letter</h5>
+            <br>
             <p class="footer-text">
               Subscribe our newsletter to get our latest update & news
             </p>
@@ -413,7 +377,7 @@
                 class="btn btn-primary position-absolte sendEmailBtn"
                 type="submit"
               >
-                <img src="assets/images/send.png" alt="" />
+                <img src="assets/images/send.png" alt="Send" />
               </button>
             </div>
           </div>

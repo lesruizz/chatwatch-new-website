@@ -15,6 +15,11 @@
     color: #9C27B0 !important;
 }
 
+.text-white {
+    color: #fff !important;
+    
+}
+
 .text-justify {
     text-align: justify;
 }
@@ -29,6 +34,21 @@
     border: #781d88;
 }
 
+.btn-gradient {
+    border-radius: 37px;
+    background: -o-linear-gradient(176deg,
+            #5b4f96 5.97%,
+            #7b3cc3 26.86%,
+            #ab2bc1 73.79%,
+            #9c27b0 96.12%);
+    background: linear-gradient(274deg,
+            #5b4f96 5.97%,
+            #7b3cc3 26.86%,
+            #ab2bc1 73.79%,
+            #9c27b0 96.12%);
+}
+
+
 .round-number {
     width: 100px;
     height: 100px;
@@ -39,17 +59,32 @@
 }
 
 .invert {
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
     transform: scaleY(-1);
 }
 
 .mirror {
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
     transform: scaleX(-1)
 }
 
+.text-lighter {
+    color: #c4c4c4;
+}
+
+.grey-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid #575757;
+}
+
+.grey-card:hover {
+    border: 2px solid #8b1e9e;
+}
+
 body {
-    /* font-family: 'Inter', sans-serif; */
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Roboto Slab', serif; */
 }
 
 /* Login & Register */
@@ -74,6 +109,26 @@ body.auth {
     padding-bottom: 13px;
 }
 
+.auth input.form-control::-webkit-input-placeholder {
+    color: #8d8d8d !important;
+
+}
+
+.auth input.form-control::-moz-placeholder {
+    color: #8d8d8d !important;
+
+}
+
+.auth input.form-control:-ms-input-placeholder {
+    color: #8d8d8d !important;
+
+}
+
+.auth input.form-control::-ms-input-placeholder {
+    color: #8d8d8d !important;
+
+}
+
 .auth input.form-control::placeholder {
     color: #8d8d8d !important;
 
@@ -84,6 +139,7 @@ body.auth {
     border: 2px solid #9324A7;
     background-color: transparent;
     outline: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
     /* color: #fff !important; */
 }
@@ -142,6 +198,16 @@ body.auth {
     margin: auto;
 }
 
+.navbar:has(.navbar-toggler[aria-expanded="true"]) {
+    border-radius: 1.5rem !important;
+}
+
+@media (max-width: 991px) {
+    .nav-item .nav-link.active::after {
+        margin-left: 10px;
+    }
+}
+
 /* Home Page */
 #hero {
     background: var(--linear, linear-gradient(180deg, #9324A7 0%, #20034B 100%));
@@ -149,6 +215,20 @@ body.auth {
 
 .hero-content h1 {
     font-size: 3rem;
+}
+
+#hero .mobileScreens img {
+    max-width: 300px !important;
+}
+
+@media (max-width :767px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    #hero .subText {
+        font-size: 1.3rem !important;
+    }
 }
 
 .videoSection {
@@ -207,14 +287,7 @@ body.auth {
     color: rgba(255, 255, 255, 1);
 }
 
-.btn-gradient {
-    border-radius: 37px;
-    background: linear-gradient(274deg,
-            #5b4f96 5.97%,
-            #7b3cc3 26.86%,
-            #ab2bc1 73.79%,
-            #9c27b0 96.12%);
-}
+
 
 .card-text {
     color: rgba(108, 108, 114, 1);
@@ -261,3 +334,219 @@ footer {
 }
 
 /* FOOTER END */
+
+/* SLIDER START */
+.visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+}
+
+.card-carousel {
+    --card-width: 80%;
+    --card-max-width: 800px;
+    --card-height: 380px;
+    --carousel-min-width: 300px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    -webkit-transition: -webkit-filter 0.3s ease;
+    transition: -webkit-filter 0.3s ease;
+    -o-transition: filter 0.3s ease;
+    transition: filter 0.3s ease;
+    transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.card-carousel.smooth-return {
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.card-carousel .card {
+    background: -webkit-gradient(linear, left top, left bottom, from(#21044c), to(#9c27b0));
+    background: -o-linear-gradient(top, #21044c 0%, #9c27b0 100%);
+    background: linear-gradient(180deg, #21044c 0%, #9c27b0 100%);
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: #fff;
+    -webkit-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.card.highlight {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+.card:nth-of-type(1) .image-container {
+    background-image: url("/assets/images/profile-img-1.png");
+}
+
+.card:nth-of-type(2) .image-container {
+    background-image: url("/assets/images/pro-img-2.jpg");
+}
+
+.card:nth-of-type(3) .image-container {
+    background-image: url("/assets/images/pro-img-3.jpg");
+}
+
+.card:nth-of-type(4) .image-container {
+    background-image: url("/assets/images/pro-img4.jpg");
+}
+
+.card:nth-of-type(5) .image-container {
+    background-image: url("/assets/images/pro-img-5.jpg");
+}
+
+.image-container {
+    width: 8em;
+    height: 8em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2em;
+    border-radius: 100%;
+    padding: 1em;
+}
+
+@media (max-width: 767px) {
+    .card-carousel {
+        --card-height: 520px;
+        height: var(--card-height);
+
+    }
+}
+
+@media (max-width: 457px) {
+    .card-carousel {
+        --card-height: 580px;
+        height: var(--card-height);
+
+    }
+}
+
+@keyframes breathing {
+    0%, 100% {
+      transform: scale(1); /* Original size */
+    }
+    50% {
+      transform: scale(1.05); /* Slightly larger */
+    }
+  }
+  
+  /* Apply the animation to the .owl-image class */
+  .owl-image {
+    width: 80px;
+    height: 80px;
+    animation: breathing 2s ease-in-out infinite;
+  }
+
+  .sticky-nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; /* Top offset when sticking */
+    z-index: 1020; /* Ensure it's above other content */
+  }
+
+
+/* SLIDER END */
+
+/* Style for navbar links on hover */
+.navbar-nav .nav-link:hover {
+    color: #fff; /* Changes text color */
+    background-color: #9c27b0; /* Adds a background color */
+    border-radius: .25rem; /* Optional: adds rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color and background */
+  }
+  
+  /* Style for the active navbar link */
+  .navbar-nav .nav-link.active {
+    font-weight: bold; /* Makes the active link bold */
+    color: #ddd; /* Color for the active link */
+  }
+  
+  /* Change the login link color on hover to make it stand out */
+  .navbar-nav .nav-link.text-primary:hover {
+    color: #ccc; /* Lighter shade when hovered for contrast */
+    text-decoration: underline; /* Underline text to highlight hover */
+    transition: color 0.2s; /* Smooth transition for color change */
+  }
+  
+  /* Add a hover effect to the Sign Up button for a 'raised' look */
+  .navbar-nav .signupBtn a.btn:hover {
+    box-shadow: 0 5px 15px #9c27b0; /* Shadow for 'lift-off' effect */
+    transform: translateY(-2px); /* Slightly raise the button */
+    transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for shadow and transform */
+  }
+  
+  /* Ensure that transitions are smooth when hovering out */
+  .navbar-nav .nav-link, .navbar-nav .signupBtn a.btn {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+  
+
+/* Add to the existing CSS provided */
+
+/* Contact Section styling */
+#contact .form-control {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #575757;
+    margin-bottom: 15px;
+}
+
+#contact .form-control:focus {
+    border-color: #9C27B0;
+    box-shadow: none;
+}
+.form-control::placeholder {
+    color: #fff; /* White color */
+    opacity: 0.5; /* Full opacity */
+}
+#contact .form-group textarea.form-control {
+    resize: none; /* Prevents resizing the textarea */
+}
+
+#contact .btn-primary.btn-gradient {
+    /* Use the .btn-gradient class provided */
+    width: 100%; /* Makes the button full-width */
+    padding: 10px; /* Adds padding for better touch */
+    font-size: 1.2em; /* Larger font size for the button text */
+}
+
+/* Responsive adjustment for smaller devices */
+@media (max-width: 576px) {
+    #contact .btn-primary.btn-gradient {
+        font-size: 1em; /* Smaller font size for the button text on small screens */
+    }
+}

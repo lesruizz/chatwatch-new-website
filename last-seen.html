@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chat Watch</title>
+    <title>ChatWatch</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,7 +26,8 @@
     <!-- Hero section -->
     <div id="hero" class="pt-3">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-black container rounded-pill px-2">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-black container rounded-pill px-2 sticky-nav"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
             <img src="assets/images/logo.png" alt="Chat Watch" />
@@ -47,27 +48,27 @@
               class="navbar-nav mx-auto mb-2 mb-lg-0 flex-grow-1 justify-content-center gap-1 gap-lg-4"
             >
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="online-checker.html"
+                  >Online Checker</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="onlineChecker.html">Online Checker</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="lastSeen.html">Last See</a>
+                <a class="nav-link active" href="last-seen.html">Last Seen</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-grow-0">
-              <li class="nav-item">
-                <a class="nav-link text-primary fw-medium" href="login.html"
+              <li class="">
+                <a class="nav-link text-white fw-medium" style="padding-right: 20px;"
+                href="login.html"
                   >Login</a
                 >
               </li>
@@ -99,29 +100,48 @@
           made it happen.
         </p>
 
-        <div class="row mx-5 mt-5 mb-3">
+        <div class="row mx-5 d-none d-md-flex">
           <div class="col-4">
             <img
-              src="assets/images/screen-1.png"
+              src="assets/images/last-see-1.png"
               alt="Home Screen"
               class="w-100"
             />
           </div>
           <div class="col-4">
             <img
-              src="assets/images/hero-mob-2.png"
+              src="assets/images/online-checker-2.png"
               alt="Home Screen"
               class="w-100"
             />
           </div>
           <div class="col-4">
             <img
-              src="assets/images/hero-mob-3.png"
+              src="assets/images/online-checker-3.png"
               alt="Home Screen"
               class="w-100"
             />
           </div>
         </div>
+
+        <!-- Screens for mobile start -->
+        <div class="d-block d-md-none mobileScreens">
+          <div class="m-5">
+            <img src="assets/images/lastsee-1.png" alt="" class="w-100" />
+          </div>
+          <div class="m-5">
+            <img
+              src="assets/images/online-checker-full-2.png"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="m-5">
+            <img src="assets/images/lastsee-3.png" alt="" class="w-100" />
+          </div>
+          <div class="spacer-50"></div>
+        </div>
+        <!-- Screens for mobile end -->
       </div>
       <!-- Hero content end -->
     </div>
@@ -261,7 +281,7 @@
         <a
           href="#"
           class="btn btn-gradient text-white py-lg-2 px-lg-3 px-3 fs-4 my-lg-4 my-md-3 my-2"
-          >3 - Day Free Trail</a
+          >3 - Day Free Trial</a
         >
       </div>
     </div>
@@ -284,22 +304,23 @@
           </div>
           <div class="col-lg-4 d-flex align-items-lg-center flex-column">
             <h5 class="mt-4 pt-3 ms-lg-3">Quick Links</h5>
+            <br>
             <ul class="list-unstyled">
               <li>
-                <a href="about.html" class="link-underline-dark text-off-white"
-                  >About</a
+                <a href="index.html" class="link-underline-dark text-off-white"
+                  >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="feature.html"
+                  href="online-checker.html"
                   class="link-underline-dark text-off-white"
-                  >Feature</a
+                  >Online Checker</a
                 >
               </li>
               <li>
-                <a href="#" class="link-underline-dark text-off-white"
-                  >Screenshot</a
+                <a href="last-seen.html" class="link-underline-dark text-off-white"
+                  >Last Seen</a
                 >
               </li>
               <li>
@@ -307,10 +328,16 @@
                   >Blog</a
                 >
               </li>
+              <li>
+                <a href="contact.html" class="link-underline-dark text-off-white"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-6">
             <h5 class="mt-4 pt-3">News Letter</h5>
+            <br>
             <p class="footer-text">
               Subscribe our newsletter to get our latest update & news
             </p>
@@ -325,7 +352,7 @@
                 class="btn btn-primary position-absolte sendEmailBtn"
                 type="submit"
               >
-                <img src="assets/images/send.png" alt="" />
+                <img src="assets/images/send.png" alt="Send" />
               </button>
             </div>
           </div>
