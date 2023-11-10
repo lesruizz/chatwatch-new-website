@@ -207,6 +207,13 @@ body.auth {
         margin-left: 10px;
     }
 }
+@media only screen and (max-width: 768px) { /* Adjusts the width threshold as needed */
+    img {
+      width: 80%; /* Or any other size */
+      height: auto;
+    }
+  }
+  
 
 /* Home Page */
 #hero {
@@ -553,3 +560,15 @@ footer {
 .faq {
     padding:20px;
 }
+
+responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 50px; /* This will ensure the image does not exceed its original width */
+  }
+  
+  @media (max-width: 768px) { /* Adjust the max-width as needed for your breakpoint */
+    .responsive-image {
+      max-width: 20%; /* On smaller screens, allow the image to be full container width */
+    }
+  }
