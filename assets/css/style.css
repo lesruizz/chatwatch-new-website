@@ -569,7 +569,7 @@ responsive-image {
   
   @media (max-width: 768px) { /* Adjust the max-width as needed for your breakpoint */
     .responsive-image {
-      max-width: 20%; /* On smaller screens, allow the image to be full container width */
+      max-width: 5%; /* On smaller screens, allow the image to be full container width */
     }
   }
 
@@ -585,4 +585,12 @@ responsive-image {
     transform: scale(1.05); /* Slightly enlarges the button to indicate interactivity */
     box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds a shadow for depth */
   }
-  
+
+.newFeature {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.owl {
+    font-size: 16px;
+    padding-top: 40px;
+}
